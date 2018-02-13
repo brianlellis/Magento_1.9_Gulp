@@ -20,6 +20,7 @@
 	npm install jquery -S
 
 3) Run Gulp + BrowserSync to watch changes and reload browsers
+    __NEED TO CHANGE URL IN GULP CONFIG FILE BEFORE USING THIS FEATURE__
 
     npm run prod 
     
