@@ -41,7 +41,9 @@
     "inject"     : false,
     "jQuery"     : true,
     "moment"     : true,
+    "Varien"     : true,
     "$"          : true,
+    "$j",        : true,
     "_"          : true
   }
 }
