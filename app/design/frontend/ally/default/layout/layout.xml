@@ -1,0 +1,15 @@
+<layout version="0.1.0">
+
+	<default>
+		<reference name="root">
+      		<action method="setTemplate"><template>page/1column.phtml</template>
+      		</action>
+    	</reference>
+ 	</default>
+
+    <country_index_index>
+        <reference name="content">
+            <block type="country/monblock" name="test" template="country/hello.phtml" />
+        </reference>
+    </country_index_index>
+</layout>

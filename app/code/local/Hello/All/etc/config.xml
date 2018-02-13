@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hello_All>
+            <version>0.1.0</version>
+        </Hello_All>
+    </modules>
+
+    <global>
+    	<helpers>
+    		<all>
+       			<class>Hello_All_Helper</class>
+    		</all>
+		</helpers>
+	</global> 
+
+    <admin>
+        <routers>
+            <the_name_of_this_element_is_not_important_it_should_be_unique>
+                <use>admin</use>
+                <args>
+                    <module>Hello_All</module>
+                    <frontName>adminhelloall</frontName>
+                </args>
+            </the_name_of_this_element_is_not_important_it_should_be_unique>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <menu>
+            <my_menu translate="title" module="all">
+                <title>Tutorial Menu</title> 
+                <sort_order>50</sort_order>
+                <children>
+                    <first_page module="all">
+                        <title>Our First Page</title> 
+                        <action>adminhelloall/index/index</action>
+                    </first_page>
+                    <second_page module="all">
+                        <title>Our Second Page</title> 
+                        <action>adminhelloall/index/sec</action>
+                    </second_page>
+                    <third_page module="all">
+                        <title>Our Third Page</title> 
+                        <action>adminhelloall/index/section</action>
+                    </third_page>
+                    <fourth_page module="all">
+                        <title>Our Fourth Page</title> 
+                        <action>adminhelloall/index/html</action>
+                    </fourth_page>
+                </children>
+            </my_menu>
+
+            <system>
+                <children>
+                    <another_menu_from_us>
+                        <title>Here Too!</title> 
+                        <action>adminhelloall/index/index</action>
+                    </another_menu_from_us>
+                </children>
+            </system>
+        </menu>    
+    </adminhtml>
+</config>

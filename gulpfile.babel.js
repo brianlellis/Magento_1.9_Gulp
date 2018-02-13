@@ -17,8 +17,8 @@ let IS_DEV = require('yargs').argv.dev || false;    // check if dev env
 // ----------------------------------------------------------------------------
 // CONFIG
 // ----------------------------------------------------------------------------
-const HOST_URL = 'http://YOUR_LOCAL_VHOST.LINK';
-const root = './skin/frontend/rwd/parfienczyk';
+const HOST_URL = 'http://m1.test';
+const root = './skin/frontend/Ally/default';
 const PATHS = {
     dist: `${root}/dist`,
     tmp: '.tmp/',

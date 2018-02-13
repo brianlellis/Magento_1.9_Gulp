@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+ 
+<config>
+    <modules>
+        <Hello_World>
+            <version>0.1.0</version>
+        </Hello_World>
+    </modules>    
+    <frontend>
+        <routers>
+            <Hello_World_SomeFreeRouterName1>
+                <use>standard</use>
+                <args>
+                    <module>Hello_World</module>
+                    <frontName>hello</frontName>
+                </args>
+            </Hello_World_SomeFreeRouterName1>
+        </routers>
+    </frontend>    
+</config>

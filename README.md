@@ -1,12 +1,3 @@
-# ES6 | Magento + RWD Template + SASS + GulpJS + BrowserSync #
-
-This is default Magento RWD template with Gulp (Sass) without Compass.
-Now compilation time is very fast - about ~5ms.  
-
-* [ES5](https://github.com/parfienczyk/magento-gulp-sass/tree/ES5) Deprecated! 
-* [ES6](https://github.com/parfienczyk/magento-gulp-sass/) NEW VERSION
-
-
 ### What is this? ###
 
 * ES6
@@ -39,10 +30,3 @@ Now compilation time is very fast - about ~5ms.
 * SASS (minify + uglify)
 * JS (JShint + minify)
 * Images (optimization)
-
-
-
-### Author ###
-
-* Karol Parfieńczyk <parfienczyk@gmail.com>
-* [http://parfienczyk.pl](http://parfienczyk.pl)

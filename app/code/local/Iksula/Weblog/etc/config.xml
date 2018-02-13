@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Iksula_Weblog>
+            <version>0.1.0</version>
+        </Iksula_Weblog>
+    </modules>
+
+    <frontend>
+    	<routers>
+        	<weblog>
+            	<use>standard</use>
+            	<args>
+                	<module>Iksula_Weblog</module>
+                	<frontName>weblog</frontName>
+            	</args>
+        	</weblog>
+    	</routers>
+	</frontend>
+
+	<global>
+		<blocks>
+            <weblog>
+                <class>Iksula_Weblog_Block</class>
+            </weblog>
+        </blocks>
+        
+	    <models>
+        	<weblog>
+            	<class>Iksula_Weblog_Model</class>
+            	<!--
+            	need to create our own resource, can't just
+            	use core_resource
+            	-->
+            	<resourceModel>weblog_resource</resourceModel>
+            	<!-- <weblog_resource>
+            		<class>Iksula_Weblog_Model_Resource</class>
+        		</weblog_resource> -->
+        	</weblog>
+    	       
+        	<weblog_resource>
+            	<class>Iksula_Weblog_Model_Resource</class>
+            	<entities>
+                	<blogpost>
+                    	<table>blog_posts</table>
+                	</blogpost>
+            	</entities>
+        	</weblog_resource>
+    	</models>
+	</global>
+</config>

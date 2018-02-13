@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Iksula_Form>
+            <version>0.1.0</version>
+        </Iksula_Form>
+    </modules>
+
+    <frontend>
+    	<routers>
+        	<form>
+            	<use>standard</use>
+            	<args>
+                	<module>Iksula_Form</module>
+                	<frontName>form</frontName>
+            	</args>
+        	</form>
+    	</routers>
+
+        <layout>  <!-- New Section Added -->
+            <updates>
+                <form>
+                    <file>form.xml</file> <!-- This is name of the layout file for this module -->
+                </form>
+            </updates>
+        </layout>
+	</frontend>
+
+    <global>
+        <blocks>
+            <form>
+                <class>Iksula_Form_Block</class>
+            </form>
+        </blocks>
+
+        <models>
+            <form>
+                <class>Iksula_Form_Model</class>
+                <!--
+                need to create our own resource, can't just
+                use core_resource
+                -->
+                <resourceModel>form_resource</resourceModel>
+                
+            </form>
+        <!-- </models>
+        <models> -->
+            <form_resource>
+                <class>Iksula_Form_Model_Resource</class>
+                <entities>
+                    <personinfo>
+                        <table>person_info</table>
+                    </personinfo>
+                </entities>
+            </form_resource>
+        </models>
+    </global>
+</config>

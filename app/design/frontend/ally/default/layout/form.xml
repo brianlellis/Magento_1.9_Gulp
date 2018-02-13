@@ -1,0 +1,15 @@
+<layout version="0.1.0">
+
+	<default>
+		<reference name="root">
+      		<action method="setTemplate"><template>page/3columns.phtml</template>
+      		</action>
+    	</reference>
+ 	</default>
+
+    <form_index_index>
+        <reference name="content">
+            <block type="form/personinfo" name="test" template="form/test.phtml" />
+        </reference>
+    </form_index_index>
+</layout>
