@@ -30,3 +30,7 @@
 * SASS (minify + uglify)
 * JS (JShint + minify)
 * Images (optimization)
+
+### Theme location ###
+
+ally/default
